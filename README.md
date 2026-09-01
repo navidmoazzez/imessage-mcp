@@ -4,11 +4,15 @@
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
 
-Give any AI agent your Apple Messages. Search years of history, look people up by name, send messages and know they arrived, transcribe voice notes locally, and catch up on everything that landed while you were away.
+It reads the Messages database already on your Mac. Nothing is uploaded anywhere.
 
-10 tools. No account to connect and no API key: it reads the Messages database already on your Mac. Full Disk Access is the whole setup.
+There is no account to connect and no API key. Full Disk Access is the whole setup.
 
-Built by [Navid Moazzez](https://navid.me).
+Access is scoped by an allowlist, so only the chats you name reach the model.
+
+10 tools. macOS only, because the database exists nowhere else.
+
+Built and maintained by [Navid Moazzez](https://navid.me).
 
 ```
 You: what did I miss?
