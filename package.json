@@ -1,7 +1,7 @@
 {
   "name": "@thenavidm/imessage-mcp",
   "version": "0.1.0",
-  "description": "An MCP server for Apple Messages on macOS: a durable inbox, search, contacts, sending with delivery confirmation, and local voice-note transcription.",
+  "description": "iMessage MCP server for Claude Code and AI agents. A durable inbox, search, contacts, and sending with delivery confirmation, for Apple Messages on macOS.",
   "type": "module",
   "bin": {
     "imessage-mcp": "./src/server.ts"

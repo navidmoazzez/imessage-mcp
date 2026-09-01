@@ -39,7 +39,7 @@ export async function haveTool(bin: string): Promise<boolean> {
 /**
  * Apple writes voice notes as .caf, and older ones as .amr. No hosted
  * transcription API accepts either, and whisper does not read them directly,
- * so everything is normalised to 16 kHz mono wav first.
+ * so everything is normalized to 16 kHz mono wav first.
  */
 async function toWav(path: string): Promise<string> {
   if (!existsSync(path)) throw new Error(`no such file: ${path}`);

@@ -1,6 +1,6 @@
 # iMessage MCP
 
-[![Licence](https://img.shields.io/badge/licence-MIT-green)](./LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
 [![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
 
@@ -203,7 +203,7 @@ Here the cursor is written to `~/.imessage-mcp/state.json` through a write-then-
 
 The practical difference is that you can close everything, go away for two days, come back, and ask what you missed.
 
-Two behaviours worth knowing.
+Two behaviors worth knowing.
 
 **A first call returns nothing.** It initialises the cursor at the current end of history rather than dumping years of messages. New messages appear from the next call.
 
@@ -473,7 +473,7 @@ Navid Moazzez is a leading AI business strategist, and the host of the AI Creato
 
 ## Dependencies
 
-| Library | Licence | What it does |
+| Library | License | What it does |
 |---|---|---|
 | [TypeScript MCP SDK](https://github.com/modelcontextprotocol/typescript-sdk) | MIT | The MCP server and transport |
 | [bun:sqlite](https://bun.sh/docs/api/sqlite) | MIT | Built into Bun, which is why there are no native modules to compile |

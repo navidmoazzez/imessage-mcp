@@ -3,7 +3,7 @@ import { nameFor, findContacts, allContacts } from "../src/contacts.ts";
 
 /**
  * These run against the real Contacts database, which differs per machine, so
- * they assert on behaviour that holds for any address book rather than on
+ * they assert on behavior that holds for any address book rather than on
  * specific people.
  */
 describe("contacts", () => {
