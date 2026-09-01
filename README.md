@@ -67,7 +67,7 @@ The first one is the point of this server. It answers from a cursor stored on di
 ## 2. Install
 
 ```sh
-git clone https://github.com/thenavidm/imessage-mcp
+git clone https://github.com/navidmoazzez/imessage-mcp
 cd imessage-mcp
 bun install
 ```
@@ -367,12 +367,11 @@ See [VERSIONS.md](VERSIONS.md).
 
 ## About the author
 
-Navid Moazzez is a leading AI business strategist and the host of the AI Creator Summit, watched by 100,000+ creators. He helps creators and founders master AI and build their own AI Operating System (AI OS) to automate their business and life. This iMessage MCP server is one piece of that system.
+Navid Moazzez is a leading AI business strategist, and the host of the AI Creator Summit, watched by 100,000+ creators. He helps creators and founders master AI and build their own AI Operating System (AI OS) to automate their business and life. This iMessage MCP server is one piece of that system.
 
 **Links**
 
 - Personal website: [navid.me](https://navid.me)
-- Store: [navid.bio](https://navid.bio)
 - YouTube: [@thenavidm](https://youtube.com/@thenavidm?sub_confirmation=1) and [@thenavidai](https://youtube.com/@thenavidai?sub_confirmation=1)
 - X: [@thenavidm](https://x.com/thenavidm)
 - Instagram: [@thenavidm](https://instagram.com/thenavidm)
