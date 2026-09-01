@@ -1,3 +1,5 @@
+<img src="https://cdn.navid.media/connectors/imessage-icon.png" alt="iMessage" width="88">
+
 # iMessage MCP
 
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
