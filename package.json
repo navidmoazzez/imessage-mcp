@@ -1,5 +1,5 @@
 {
-  "name": "imessage-mcp",
+  "name": "@thenavidm/imessage-mcp",
   "version": "0.1.0",
   "description": "An MCP server for Apple Messages on macOS: a durable inbox, search, contacts, sending with delivery confirmation, and local voice-note transcription.",
   "type": "module",

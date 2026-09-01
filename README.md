@@ -1,5 +1,9 @@
 # iMessage MCP
 
+[![Licence](https://img.shields.io/badge/licence-MIT-green)](./LICENSE)
+[![YouTube](https://img.shields.io/badge/YouTube-@thenavidm-red?logo=youtube&logoColor=white)](https://youtube.com/@thenavidm?sub_confirmation=1)
+[![X](https://img.shields.io/badge/X-@thenavidm-black?logo=x)](https://x.com/thenavidm)
+
 Give any AI agent your Apple Messages. Search years of history, look people up by name, send messages and know they arrived, transcribe voice notes locally, and catch up on everything that landed while you were away.
 
 10 tools. No account to connect and no API key: it reads the Messages database already on your Mac. Full Disk Access is the whole setup.
@@ -40,7 +44,6 @@ Claude: 4 messages since you last checked, including two from Sunday
 | 9 | [Your data](#9-your-data) | What is stored and where |
 | 10 | [Risks](#10-risks) | Read this before you install |
 | 12 | [Troubleshooting](#12-troubleshooting) | When something breaks |
-| 13 | [Build from source](#13-build-from-source) | Contributing |
 
 ---
 
@@ -331,19 +334,6 @@ Your agent is a different matter. Anything a tool returns goes into that model's
 
 ---
 
-## 13. Build from source
-
-```sh
-bun install
-bun test
-bun run doctor
-```
-
-21 tests. The decoder tests build synthetic `streamtyped` payloads rather than reading your messages, so they run anywhere. Contact tests assert on behaviour that holds for any address book, including an empty one.
-
-CI runs on `macos-latest`, since `chat.db` and AppleScript exist nowhere else.
-
-Pull requests welcome. If you are changing the decoder, add a length to `tests/decoder.test.ts` first and watch it fail.
 
 ---
 
@@ -364,6 +354,106 @@ Pull requests welcome. If you are changing the decoder, add a length to `tests/d
 ## Versions
 
 See [VERSIONS.md](VERSIONS.md).
+
+---
+
+## FAQ ❓
+
+<details>
+<summary><b>What is an MCP server?</b></summary>
+
+An MCP server is a standard way to give an AI assistant real access to a tool,
+so it can act rather than guess. You install it once, your assistant gains the
+tools, and it works in Claude, Cursor and anything else that speaks the
+protocol.
+
+</details>
+
+<details>
+<summary><b>Does this send my messages to anyone?</b></summary>
+
+Nothing leaves your Mac. The server reads the local `chat.db` that Messages
+already keeps on your machine, and there is no backend, no account and no
+telemetry. What your AI client does with what it reads is between you and that
+client.
+
+</details>
+
+<details>
+<summary><b>Why does macOS ask for Full Disk Access?</b></summary>
+
+The Messages database sits in a protected location, so macOS requires Full Disk
+Access before anything can open it. That permission is what makes the whole
+server work, and without it every tool returns nothing.
+
+</details>
+
+<details>
+<summary><b>Can it read every conversation I have?</b></summary>
+
+It reads only what the allowlist permits. Access is scoped to your self-chat,
+direct messages with handles you list, and groups you configure. Messages from
+anyone else still land in `chat.db`, and the scope keeps them out of results.
+
+</details>
+
+<details>
+<summary><b>Can it send messages as me?</b></summary>
+
+It can reply to chats you have allowed, and that is deliberately narrow.
+Sending reaches a real person who knows you, cannot be unsent, and is the one
+action here worth being careful with.
+
+</details>
+
+<details>
+<summary><b>Could someone hide instructions in a message to hijack it?</b></summary>
+
+They can try, which is why message text is treated as data to report on rather
+than instructions to follow. This is the sharpest version of the problem: a
+message is text a stranger chose, aimed at an assistant that can reply. The
+allowlist is the real defence, because it limits whose text reaches the model at
+all.
+
+</details>
+
+<details>
+<summary><b>Does it work on Windows or Linux?</b></summary>
+
+It runs on macOS only. The server reads the Messages database, which exists
+nowhere else, so there is nothing to port.
+
+</details>
+
+<details>
+<summary><b>Does it cost anything?</b></summary>
+
+It costs nothing. The server is MIT licensed and talks to nothing but your own
+Mac, so there is no API bill.
+
+</details>
+
+<details>
+<summary><b>Does my phone need to be nearby?</b></summary>
+
+Your Mac needs to be signed in to Messages, which it already is if you read
+iMessage there. The server reads the database that sync keeps up to date, so the
+phone can be anywhere.
+
+</details>
+
+<details>
+<summary><b>How do I disconnect it?</b></summary>
+
+Remove the server from your client's config, and revoke Full Disk Access in
+System Settings under Privacy and Security. That cuts access completely.
+
+</details>
+
+
+## Questions
+
+Run into a problem or have a question? [Open an issue](https://github.com/navidmoazzez/imessage-mcp/issues) and I will help.
 
 ## About the author
 
