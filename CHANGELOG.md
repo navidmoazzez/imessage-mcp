@@ -1,4 +1,4 @@
-# iMessage MCP Versions
+# iMessage MCP changelog
 
 | Component | Version | Last Updated |
 |-----------|---------|--------------|

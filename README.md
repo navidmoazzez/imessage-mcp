@@ -333,7 +333,7 @@ Your agent is a different matter. Anything a tool returns goes into that model's
 
 ## Versions
 
-See [VERSIONS.md](VERSIONS.md).
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## FAQ ❓
 
