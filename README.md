@@ -17,7 +17,7 @@ Access is scoped by an allowlist, so only the chats you name reach the model.
 
 Built and maintained by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=imessage-mcp).
 
-<img src="https://cdn.navid.media/repos/imessage-mcp.gif?v=1" alt="Claude Code using the iMessage MCP server" width="520">
+<img src="https://cdn.navid.media/repos/imessage-mcp.gif?v=2" alt="Claude Code using the iMessage MCP server" width="520">
 
 ## Contents
 
