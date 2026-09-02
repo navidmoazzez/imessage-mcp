@@ -17,24 +17,7 @@ Access is scoped by an allowlist, so only the chats you name reach the model.
 
 Built and maintained by [Navid Moazzez](https://navid.me?utm_source=github&utm_medium=readme&utm_campaign=imessage-mcp).
 
-```
-You: what did I miss?
-
-Claude: 4 messages since you last checked, including two from Sunday
-  while nothing was running.
-
-  Mike Filsaime, Sunday 18:42
-    Moving our call to Thursday, does 10 work?
-
-  Anna, Sunday 21:10
-    [voice note, 0:34] Transcribed: "hey, sending the invoice over
-    tomorrow, the amount changed to 4,200 because of the extra day"
-
-  Chase Bank, yesterday 09:15
-    Two verification codes, both expired.
-
-  Mike is the only one waiting on you. Want me to reply?
-```
+<img src="https://cdn.navid.media/repos/imessage-mcp.gif?v=1" alt="Claude Code using the iMessage MCP server" width="520">
 
 ## Contents
 
