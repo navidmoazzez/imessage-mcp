@@ -56,7 +56,7 @@ The first one is the point of this server. It answers from a cursor stored on di
 ## 2. Install
 
 ```sh
-git clone https://github.com/navidmoazzez/imessage-mcp
+git clone https://github.com/thenavidm/imessage-mcp
 cd imessage-mcp
 bun install
 ```
@@ -413,7 +413,7 @@ System Settings under Privacy and Security. That cuts access completely.
 
 ## Questions
 
-Run into a problem or have a question? [Open an issue](https://github.com/navidmoazzez/imessage-mcp/issues) and I will help.
+Run into a problem or have a question? [Open an issue](https://github.com/thenavidm/imessage-mcp/issues) and I will help.
 
 ## About the author
 
